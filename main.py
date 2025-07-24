@@ -11,7 +11,7 @@ from flask import Flask, request, jsonify
 import json
 
 
-model = keras.models.load_model('model-trFalse-0.8898.h5',
+model = keras.models.load_model('model-trFalse-0.8850.h5',
                                 custom_objects={'KerasLayer': hub.KerasLayer})
 
 label = ["caries", "discoloration"]
