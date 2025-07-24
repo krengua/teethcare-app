@@ -1,0 +1,15 @@
+# scikit-learn
+# keras-utils
+# fastapi
+gunicorn
+tensorflow
+tensorflow_hub
+numpy
+# uvicorn
+pillow
+# requires.io
+# python-multipart
+# gcloud
+# uuid
+# efficientnet
+Flask
