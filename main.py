@@ -2,7 +2,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import io
-import tensorflow as tf
+import tensorflow
 from tensorflow import keras
 import tensorflow_hub as hub
 import numpy as np
@@ -11,7 +11,7 @@ from flask import Flask, request, jsonify
 import json
 
 
-model = keras.models.load_model('model-trFalse-0.8850.h5',
+model = keras.models.load_model('model-trFalse-0.8898.h5',
                                 custom_objects={'KerasLayer': hub.KerasLayer})
 
 label = ["caries", "discoloration"]
@@ -43,7 +43,7 @@ def index():
 
 @app.route("/", methods=["GET"])
 def home():
-    return "Hello World! This belongs to the route path of Multilabel Classification API"
+    return "Hello World! This belongs to the route path of Multilabel Classification API by TeethCare Team."
 
 if __name__ == "__main__":
     # app.run(debug=True)
