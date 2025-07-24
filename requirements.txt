@@ -2,8 +2,8 @@
 # keras-utils
 # fastapi
 gunicorn
-tensorflow
-tensorflow_hub
+tensorflow==2.15.0
+tensorflow_hub==0.15
 numpy
 # uvicorn
 pillow
